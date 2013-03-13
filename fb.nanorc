@@ -1,0 +1,17 @@
+# Nanorc for FreeBASIC programming language
+# 2013 fbcoder
+
+# Files
+syntax "fb" "\.bas$"
+
+# Keywords
+color blue "\<([Ii]f|[tT]hen|[Ee]lse|[Ee]nd [Ii]f|[Dd]im|[Aa]s|[Ss]hared|[Ff]or|[Nn]ext|[Dd]o|[Ll]oop|[Ww]hile|[Uu]ntil|[Ss]hared|[Ww]end|[Cc]onst)\>"
+
+# Blocks
+color blue "\<([Tt]ype|[Ee]nd [Tt]ype|[Ss]ub|[Ee]nd [Ss]ub|[Ff]unction]|[Ee]nd [Ff]ucntion|[Dd]eclare|[Cc]onstructor|[Ee]nd [Cc]onstructor|[Dd]estructor|[Ee]nd [Dd]estructor)\>"
+
+# Types
+color green "\<([Ii]nteger|[Ss]tring|[Dd]ouble|[Pp]tr)\>"
+
+# Comment
+color yellow "^([Rr][Ee][Mm]|\'.*)"
