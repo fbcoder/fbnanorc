@@ -4,11 +4,18 @@
 # Files
 syntax "fb" "\.bas$"
 
+# --------
 # Keywords
-color blue "\<([Ii]f|[tT]hen|[Ee]lse|[Ee]nd [Ii]f|[Dd]im|[Aa]s|[Ss]hared|[Ff]or|[Nn]ext|[Dd]o|[Ll]oop|[Ww]hile|[Uu]ntil|[Ss]hared|[Ww]end|[Cc]onst)\>"
+# --------
+
+# Definitions
+color blue "\<([Dd]im|[Ss]hared|[Aa]s)\>"
+
+# Flow control
+color blue "\<([Ii]f|[tT]hen|[Ee]lse|[Ee]nd [Ii]f|[Ff]or|[Nn]ext|[Dd]o|[Ll]oop|[Ww]hile|[Uu]ntil|[Ss]hared|[Ww]end|[Cc]onst)\>"
 
 # Blocks
-color blue "\<([Tt]ype|[Ee]nd [Tt]ype|[Ss]ub|[Ee]nd [Ss]ub|[Ff]unction]|[Ee]nd [Ff]ucntion|[Dd]eclare|[Cc]onstructor|[Ee]nd [Cc]onstructor|[Dd]estructor|[Ee]nd [Dd]estructor)\>"
+color blue "\<([Tt]ype|[Ee]nd [Tt]ype|[Ss]ub|[Ee]nd [Ss]ub|[Ff]unction]|[Ee]nd [Ff]ucntion|[Dd]eclare|[Cc]onstructor|[Ee]nd [Cc]onstructor|[Dd]estructor|[Ee]nd [Dd]estructor|[Ee]num|[Ee]nd [Ee]num)\>"
 
 # Types
 color green "\<([Ii]nteger|[Ss]tring|[Dd]ouble|[Pp]tr)\>"
