@@ -1,5 +1,6 @@
 # Nanorc for FreeBASIC programming language
 # 2013 fbcoder
+# Thanks to https://github.com/craigbarnes/nanorc for examples.
 
 # Files
 syntax "fb" "\.bas$"
@@ -9,16 +10,42 @@ syntax "fb" "\.bas$"
 # --------
 
 # Definitions
-color blue "\<([Dd]im|[Ss]hared|[Aa]s)\>"
+color blue "\<([Dd]im|[Ss]hared|[Aa]s|[Cc]onst)\>"
 
 # Flow control
-color blue "\<([Ii]f|[tT]hen|[Ee]lse|[Ee]nd [Ii]f|[Ff]or|[Nn]ext|[Dd]o|[Ll]oop|[Ww]hile|[Uu]ntil|[Ss]hared|[Ww]end|[Cc]onst)\>"
+color blue "\<([Ii]f|[tT]hen|[Ee]lse|[Ee]nd [Ii]f|[Ff]or|[Tt]o|[Nn]ext|[Dd]o|[Ll]oop|[Ww]hile|[Uu]ntil|[Ss]hared|[Ww]end)\>"
+
+# Text
+color blue "\<([Pp]rint|[Ii]nput|[Oo]pen|[Ll]ocate|[Cc]olor|[Cc]hr$.)>"
 
 # Blocks
 color blue "\<([Tt]ype|[Ee]nd [Tt]ype|[Ss]ub|[Ee]nd [Ss]ub|[Ff]unction]|[Ee]nd [Ff]ucntion|[Dd]eclare|[Cc]onstructor|[Ee]nd [Cc]onstructor|[Dd]estructor|[Ee]nd [Dd]estructor|[Ee]num|[Ee]nd [Ee]num)\>"
 
+# Graphics
+# TODO
+
+# Memory
+# TODO
+
+# Mathematic
+color blue "\<([Ss]in|[Cc]os|[Tt]an)\>"
+ 
+# Misc
+color blue "\<([Dd]ata|[Ss]ystem)\>" 
+
+# -----
 # Types
+# -----
 color green "\<([Ii]nteger|[Ss]tring|[Dd]ouble|[Pp]tr)\>"
 
+# ---------
+# Operators
+# ---------
+color magenta "\<([Aa]nd|[Oo]r|[Xx]or|[Nn]ot)|[=+-]\>"
+
+# Quoted string
+color red ""(\\.|[^"])*"|<[A-Za-z_./-]+>"
+
 # Comment
-color yellow "^([Rr][Ee][Mm]|\'.*)"
+color yellow "(^|[[:space:]])'.*"
+color yellow "^[Rr][Ee][Mm].*"
